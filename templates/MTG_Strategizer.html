@@ -5,22 +5,22 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="DivAligner.css">
+	<link rel="stylesheet" type="text/css" href="/static/DivAligner.css">
 </head>
 <body>
 	<div class="outer">
 <div class="middle">
 <div class="inner">
 
-<img src="MTG_Heading.png"/>
+<img src="/static/MTG_Heading.png"/>
 
 <h2>Enter strategies you're considering:</h2>
 <br/>
-<form>
-<input type="text" name="Strategies" style="font-size:16pt;">
+<form action="." method="POST">
+<input type="text" name="text" style="font-size:16pt;">
 <input type="submit" name="submit" value="Find my colors!" style="font-size:16pt;">
 </form>
- <img src="MTG_Colors.png"/>
+ <img src="/static/MTG_Colors.png"/>
                             
 </div>
 </div>
