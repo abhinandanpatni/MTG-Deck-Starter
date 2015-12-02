@@ -16,7 +16,7 @@
     margin-left: auto;
     margin-right: auto; 
     width: 75%;
-    height:50%;
+    height:100%;
     background: #FAEBD7;
     border-radius: 10pt;
     opacity: 0.9;
@@ -27,3 +27,6 @@ img {
     display: block;
     margin: 0 auto;
 }
+
+tr{padding: 10 10 10 10;}
+td{text-transform: capitalize; padding: 15 15 15 15;}
