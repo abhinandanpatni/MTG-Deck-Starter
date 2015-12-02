@@ -30,7 +30,12 @@ with open("NewShuffledFile.txt", "r") as inputFile:
 			new_line = line.replace("\t", " ").split(' ')
 			op_line = ""
 			op_line += str(colorList.index(new_line[0])+1) + " "
+			featsList = list()
 			for each in new_line[1:]:
-				op_line += str(vectorizer.vocabulary_.get(each.lower())) + ":" +str(float(1)) + " " 
+				featsList.append(vectorizer.vocabulary_.get(each.lower()))
+			featsList = sorted(set(featsList))
+			featsList = ' '.join(str(x)+":"+str(float(1)) for x in featsList)
+
+			op_line += featsList
 			
 			outputFile.write(op_line.rstrip() + "\n")
